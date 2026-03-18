@@ -1,0 +1,42 @@
+// Create the main character with initial stats
+Create Warrior Thorin
+Create Mage Alex
+create Thief Noam
+
+// Define the rooms of the dungeon
+create Room Entrance
+Create Room Hallway
+Create Room TreasureRoom
+
+// Set the starting point of the dungeon exploration
+Set StartRoom Entrance
+
+// Establish connections between rooms to enable navigation
+Connect Entrance Hallway North
+Connect Hallway TreasureRoom East
+
+// Place items and monsters in specific rooms
+place Health Potion Entrance 0 0 0  
+Place Wand Hallway 0 0 0
+PlACe Dagger Entrance 0 0 0
+Place Sword Entrance 0 10 0 // Sword in Entrance
+Place Monster Goblin Hallway 30 5 2 // Goblin in Hallway, 30 Health, 5 Strength, 2 Defense
+Place Shield TreasureRoom 0 0 0 // Shield in TreasureRoom, +5 Defense
+Place Sword Hallway 0 5 0 // Sword in Hallway +5 Strength
+
+// Character actions: entering the dungeon, moving, fighting, and picking up items
+Enter Dungeon Thorin // Thorin starts his adventure
+Enter Dungeon Alex
+Enter Dungeon Noam
+PickUp Thorin Sword // Thorin picks up the Sword
+PickUp Alex Dagger
+PickUp Noam Dagger
+PickUp Thorin Health Potion 
+Move Thorin North // Thorin moves to the Hallway
+Move Alex North
+Move Noam North
+Fight Thorin Goblin // Thorin fights the Goblin in the Hallway
+PickUp Thorin Sword // Thorin picks up a better Sword
+PickUp Alex Wand
+Move Thorin East // Thorin moves to the TreasureRoom
+PickUp Thorin Shield // Thorin picks up the Shield
