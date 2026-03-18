@@ -1,5 +1,3 @@
-// Noam Eilat : 322713025
-// Amit Lachmann : 207448267
 
 #include "Game.hpp"
 #include <climits>
