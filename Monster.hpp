@@ -1,7 +1,5 @@
-/*  Noam Eilat : 322713025
-    Amit Lachmann : 207448267   */
+
 #include<iostream>
-//#include "Character.hpp"
 
 #pragma once
 
